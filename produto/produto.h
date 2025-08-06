@@ -7,7 +7,7 @@
 typedef struct{
 
 int id;
-char name[50];
+char nome[50];
 int quantidade;
 double preco;
 
@@ -21,5 +21,9 @@ typedef struct {
 void adicionar_produto(Estoque *estoque);
 void listar_produtos(Estoque estoque);
 void buscar_produtos_id (Estoque Estoque);
+void atualizar_quantidade (Estoque *estoque);
+void remover_produto (Estoque *estoque);
+void valor_total_do_estoque (Estoque estoque);
+void valor_total_do_estoque (Estoque estoque);
 
 #endif

@@ -1,15 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 #include "produto.h"
-#include "utils.h"
 
-int main() {
-    Estoque estoque;
-    estoque.total_produtos = 0;
 
+int master_principal (){
     printf("Sistema de estoque iniciado.\n");
-    return 0;
-
 }
 
 void adicionar_produto(Estoque *estoque) {
@@ -26,7 +21,7 @@ void adicionar_produto(Estoque *estoque) {
     // Verificação se o ID já existe
     int id_existe = 0;
     for (int i = 0; i < estoque->total_produtos; i++) {
-        if (estoque.lista[i].id == p->id) {
+        if (estoque->lista[i].id == &p->id) {
             id_existe = 1;
             break;
         }
@@ -37,7 +32,7 @@ void adicionar_produto(Estoque *estoque) {
     } else {
         limpar_entrada();
         printf("Nome: ");
-        ler_texto(p->name, 50);
+        ler_texto(p->nome, 50);
 
         printf("Quantidade: ");
         scanf("%d", &p->quantidade);
@@ -167,6 +162,7 @@ void listar_produtos_baixo_estoque(Estoque estoque) {
         }
     }
         if (contador_de_estoque_baixo == 0) {
-            printf("Nenhum produto com estoque baixo\n")
+            printf("Nenhum produto com estoque baixo\n");
         }
 }
+

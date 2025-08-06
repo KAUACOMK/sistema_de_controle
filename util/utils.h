@@ -5,6 +5,4 @@
 void limpar_entrada();
 void ler_texto(char *buffer, int length);
 
-
-
 #endif
