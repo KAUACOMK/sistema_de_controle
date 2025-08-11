@@ -34,7 +34,7 @@ Estrutura do Projeto
 
 Tecnologias Utilizadas
 
-* **Linguagem C**
+**Linguagem C**
 
 ---
 
@@ -45,8 +45,9 @@ Este projeto é de uso livre para estudos e modificações.
 
 ---
 
-### ✍️ Autor
+Autor:
 
-Desenvolvido por **Kauã Silva**
-📧 \ [kauan_abadias13@homtail.com]
-🔗 \ [https://www.linkedin.com/in/kaua-silva-303025286/]
+Desenvolvido por Kauã Silva
+📧 \ kauan_abadias13@homtail.com
+🔗 \ https://www.linkedin.com/in/kaua-silva-303025286/
+
