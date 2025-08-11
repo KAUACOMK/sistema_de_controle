@@ -47,10 +47,10 @@ int main()
         listar_produtos_baixo_estoque(estoque);
         break;
     case 0:
-        printf("Saiu");
+        printf("Encerrando o sistema...\n");
         break;
     default:
-        printf ("Encerrando o sistema...\n");
+        printf ("Digite um dos valores valido...\n");
         break;
     }
 }

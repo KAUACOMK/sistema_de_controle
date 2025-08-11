@@ -59,6 +59,7 @@ void lista_produtos(Estoque estoque) {
 }
 void buscar_produtos_id (Estoque estoque) {
     int id_scanner = 0, encontrado = 0;
+    printf("\nDigite uma ID:\n");
     scanf("%d", &id_scanner);
     for (int i = 0; i < estoque.total_produtos; i++) {
         Produto p = estoque.lista[i];
@@ -74,6 +75,7 @@ void buscar_produtos_id (Estoque estoque) {
 }
 void atualizar_quantidade (Estoque *estoque) {
     int id_scanner = 0, encontrado = 0;
+    printf("\nDigite uma ID:\n");
     scanf("%d", &id_scanner);
     int resposta = 0, nova_quantidade = 0, atualizado = 0;
     int aumentar = 1, reduzir = 2, posicao = -1;
@@ -120,6 +122,7 @@ void atualizar_quantidade (Estoque *estoque) {
 }
 void remover_produto (Estoque *estoque) {
     int id_scanner = 0, encontrado = 0, posicao = -1;
+    printf("\nDigite uma ID:\n");
     scanf("%d", &id_scanner);
 
     for (int i = 0; i < estoque->total_produtos; i++) {
